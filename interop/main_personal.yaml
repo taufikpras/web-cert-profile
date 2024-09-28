@@ -1,0 +1,48 @@
+version: 1.4
+certificate:
+  - basic:
+    - signature_algorithm:
+      - 1.2.840.113549.1.1.11
+      - 1.2.840.113549.1.1.12
+      - 1.2.840.113549.1.1.13
+    - x509_version: 3
+    - serial_number_max_length: 20
+    - allowed_issuer_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - minimum_issuer_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - validity_in_year: 2
+    - allowed_subject_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - minimum_subject_dn_personal:
+      - 2.5.4.3
+      - 2.5.4.11
+      - 2.5.4.6
+    -  minimum_subject_dn_affiliated:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.6
+    - minimum_subject_dn_segel:
+      - 2.5.4.3
+      - 2.5.4.6
+    - subject_key_algorithm:
+      - rsa: 
+        - oid: 1.2.840.113549.1.1.1
+        - key_length: 2048
+      - ecc_pub:
+        - oid: 1.2.840.10045.2.1
+        - key_length: 256
+      - ecc:
+        - oid: 1.2.840.10045.3.1.7
+        - key_length: 256
+  - extension:
+    - 
