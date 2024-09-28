@@ -1,0 +1,109 @@
+interoperability_version: 1.4
+oid_version: 1.4
+certificate:
+  - basic:
+    - signature_algorithm:
+      - 1.2.840.113549.1.1.11
+      - 1.2.840.113549.1.1.12
+      - 1.2.840.113549.1.1.13
+    - x509_version: 3
+    - serial_number_max_length: 20
+    - allowed_issuer_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - minimum_issuer_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - validity_in_year: 2
+    - allowed_subject_dn:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.11
+      - 2.5.4.6
+    - minimum_subject_dn_personal:
+      - 2.5.4.3
+      - 2.5.4.11
+      - 2.5.4.6
+    -  minimum_subject_dn_affiliated:
+      - 2.5.4.3
+      - 2.5.4.10
+      - 2.5.4.6
+    - minimum_subject_dn_segel:
+      - 2.5.4.3
+      - 2.5.4.6
+    - subject_key_algorithm:
+      - rsa: 
+        - oid: 1.2.840.113549.1.1.1
+        - key_length: 2048
+      - ecc_pub:
+        - oid: 1.2.840.10045.2.1
+        - key_length: 256
+      - ecc:
+        - oid: 1.2.840.10045.3.1.7
+        - key_length: 256
+  - extension:
+    - authority_key_identifier:
+      - mandatory: 1
+      - critical: 0
+    - subject_key_identifier:
+      - mandatory: 1
+      - critical: 0
+    - keyusage:
+      - mandatory: 1
+      - critical: 1
+      - value:
+        - not_allowed_key_usages:
+          - XXXXX1XXX
+          - XXXXXX1XX
+          - 1X111XX11
+    - policies:
+      - mandatory: 1
+      - critical: 1
+      - value: 
+        - legacy_oid:
+          - legacy_seal: 
+            - 2.16.360.1.1.1.3.11
+            - 2.16.360.1.1.1.3.12
+          - legacy_level:
+            - 2.16.360.1.1.1.4.1
+            - 2.16.360.1.1.1.4.2
+            - 2.16.360.1.1.1.4.3
+            - 2.16.360.1.1.1.4.4
+          - legacy_usage:
+            - 2.16.360.1.1.1.7.1
+            - 2.16.360.1.1.1.7.2
+    - san:
+      - mandatory: 0
+      - critical: 0
+    - ian:
+      - mandatory: 0
+      - critical: 0
+    - basic_constraint:
+      - mandatory: 1
+      - critical: 1
+    - name_constraint:
+      - mandatory: -1
+      - critical: 0
+    - eku:
+      - mandatory: 0
+      - critical: 0
+    - crldp:
+      - mandatory: 1
+      - critical: 0
+    - fresh_crl:
+      - mandatory: 0
+      - critical: 0
+    - aia:
+      - mandatory: 1
+      - critical: 0
+  
+  
+
+  - basic_constraint_value: 
+    - ca: false
+    - pathlen: 0
+  
