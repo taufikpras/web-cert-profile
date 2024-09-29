@@ -1,2 +1,4 @@
 cryptography
 openpyxl
+pyyaml
+requests
