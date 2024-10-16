@@ -1,4 +1,4 @@
-from model.standard_model import StandardModel
+from src.model.standard_model import StandardModel
 
 obj = StandardModel()
 
